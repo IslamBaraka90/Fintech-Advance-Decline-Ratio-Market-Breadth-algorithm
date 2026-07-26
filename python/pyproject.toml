@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fintech-advance-decline-ratio"
+version = "0.1.0"
+description = "Advance/Decline Ratio market-breadth metric — point-in-time and correction-aware, with denominator state and evidence quality kept as separate explicit dimensions. Canonical cross-language reference implementation."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "The Fintech Builder", email = "islam.baraka.90@gmail.com" }]
+keywords = [
+  "fintech", "advance-decline-ratio", "ad-ratio", "market-breadth", "breadth",
+  "market-internals", "point-in-time", "revision-aware", "no-lookahead",
+  "trading", "finance", "quant", "algorithm",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Financial and Insurance Industry",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Office/Business :: Financial :: Investment",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[project.urls]
+"Article" = "https://thefintechbuilder.com/market-breadth-and-internals/advance-decline-breadth/advance-decline-ratio/"
+"Homepage" = "https://thefintechbuilder.com"
+"Source" = "https://github.com/IslamBaraka90/Fintech-Advance-Decline-Ratio-Market-Breadth-algorithm"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/fintech_ad_ratio"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

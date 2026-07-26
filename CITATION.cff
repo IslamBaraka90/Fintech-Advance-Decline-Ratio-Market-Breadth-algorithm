@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+title: "Fintech Advance/Decline Ratio — Market Breadth Algorithm"
+message: "If you use this software, please cite it and the companion article."
+type: software
+authors:
+  - name: "The Fintech Builder"
+repository-code: "https://github.com/IslamBaraka90/Fintech-Advance-Decline-Ratio-Market-Breadth-algorithm"
+url: "https://thefintechbuilder.com/market-breadth-and-internals/advance-decline-breadth/advance-decline-ratio/"
+keywords:
+  - fintech
+  - advance-decline-ratio
+  - market-breadth
+  - advance-decline
+  - point-in-time
+license: MIT
+version: "0.1.0"

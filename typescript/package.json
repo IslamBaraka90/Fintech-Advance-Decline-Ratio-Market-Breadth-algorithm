@@ -1,0 +1,39 @@
+{
+  "name": "fintech-advance-decline-ratio",
+  "version": "0.1.0",
+  "description": "Advance/Decline Ratio market-breadth metric — point-in-time and correction-aware, with denominator state and evidence quality kept as separate explicit dimensions. Canonical cross-language reference implementation.",
+  "keywords": [
+    "fintech",
+    "advance-decline-ratio",
+    "market-breadth",
+    "advance-decline",
+    "breadth",
+    "market-internals",
+    "point-in-time",
+    "revision-aware",
+    "no-lookahead",
+    "trading",
+    "finance",
+    "quant",
+    "algorithm"
+  ],
+  "homepage": "https://thefintechbuilder.com/market-breadth-and-internals/advance-decline-breadth/advance-decline-ratio/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IslamBaraka90/Fintech-Advance-Decline-Ratio-Market-Breadth-algorithm.git"
+  },
+  "license": "MIT",
+  "author": "The Fintech Builder <islam.baraka.90@gmail.com>",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "files": ["dist", "src", "README.md", "LICENSE"],
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc",
+    "test": "node --experimental-strip-types --test \"test/*.test.ts\"",
+    "example": "node --experimental-strip-types examples/quickstart.ts"
+  },
+  "devDependencies": { "typescript": "^5.7.0" }
+}
