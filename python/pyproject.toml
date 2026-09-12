@@ -6,7 +6,6 @@ build-backend = "hatchling.build"
 name = "fintech-advance-decline-ratio"
 version = "0.1.0"
 description = "Advance/Decline Ratio market-breadth metric — point-in-time and correction-aware, with denominator state and evidence quality kept as separate explicit dimensions. Canonical cross-language reference implementation."
-readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{ name = "The Fintech Builder", email = "islam.baraka.90@gmail.com" }]
